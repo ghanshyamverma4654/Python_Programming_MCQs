@@ -35,7 +35,7 @@ print(list[::-2])
 
 a = 1
 b = 0
-print(any(a, b)
+print(any(a, b))
 
 #Output: TypeError: any() takes exactly one argument (2 given)
 
@@ -85,15 +85,33 @@ print(l1 is l2,  l1 == l2)
 def add(a, b):
 	return a + 5, b + 5
 result = add(3, 2)
-print(result)	
+print(result)
 
-#Output: (8, 7)
 
-#------------------------------------->
+# Output: (8, 7)
+
+# ------------------------------------->
 
 def function(a=12, b=12):
-	print(a//9)
-	return(a*b)
-function(a=9, b=2)	
+	print(a // 9)
+	return (a * b)
 
-#Output: 1
+
+function(a=9, b=2)
+
+
+# Output: 1
+
+# -------------------------------------->
+
+# PYTHON RECURSION EXAMPLES
+
+def sum(n):
+	total = 0
+	for index in range(n + 1):
+		total += index
+	return total
+
+
+result = sum(100)
+print(result)
