@@ -115,3 +115,21 @@ def sum(n):
 
 result = sum(100)
 print(result)
+
+
+# Output: 5050
+# =====================================
+
+def countdown(n):
+	print(n)
+
+
+if n == 0:
+	return
+else:
+	countdown(n - 1)
+countdown(5)
+
+# Output: SyntaxError: 'return' outside function
+
+# -------------------------------------->
